@@ -72,7 +72,12 @@ ul > li {
 .menu-content {
   margin-top: 32px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -80,10 +85,21 @@ ul > li {
   background-color: #f1f1f1;
   padding: 20px;
   border-radius: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
+.menu-image img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .menu-cart {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: 10px 0 10px 0;
+  width: 280px;
 }
 .menu-icon {
   display: flex;
@@ -107,6 +123,7 @@ ul > li {
 .review_banner_down {
   position: relative;
   top: -35px;
+  width: 510px;
 }
 .review-down-image {
   position: relative;
@@ -192,4 +209,117 @@ ul > li > a {
   color: #1d1d1d;
 }
 
+@media screen and (max-width:576px) {
+  /* nav section */
+  .nav-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  .nav-ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  /* .nav-icon */
+  /* hero section */
+  .Hero-container {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero-heading{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .Hero-container img{
+   max-width: 100%;
+    height: auto;
+    text-align: center;
+   } 
+  /* what we serve */
+  .serve{
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* menu */
+  .menu-content{
+  flex-direction: column;
+    align-items: center;
+  }
+  .menu-cart{
+    /* margin-bottom: 30px; */
+    width: 90%;
+    max-width: 280px;
+  }
+  
+  /* review section */
+  .review-section{
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .review_banner {
+    /* margin: 20px 0; */
+    margin-left: 0 ;
+    text-align: center;
+  }
+  .review_banner img{
+    max-width: 100%;
+    height: auto;
+  }
+  .review_banner_down{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .review-down-image{
+    position: static;
+    left: 0;
+  }
+  .review-card-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .review-card-one{
+    width: 100%;
+  }
+  /* last banner */
+  .last-banner-container{
+    height: auto;
+    background-size: cover;
+    padding: 40px 20px;
+    margin-top: 30px;
 
+  }
+  /* footer */
+  .footer{
+    height: auto;
+    padding: 40px 20px;
+  }
+  .footer-row{
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-col {
+    margin-bottom: 30px;
+  }
+
+  .footer-col div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-copy-part {
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+
+  
+}
